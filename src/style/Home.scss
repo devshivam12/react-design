@@ -1,0 +1,306 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+  
+ 
+}
+.left-bar{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    
+}
+.best-ad{
+    margin-top: 6rem;
+    background: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+.best-ad div{
+    position: absolute;
+    background: var(--orange);
+    height: 80%;
+    width: 5.4rem;
+    left: 7px;
+    border-radius: 4rem;
+}   
+.best-ad span{
+    z-index: 2;
+    color: white;
+}
+.slogan{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font: 600 4.5rem  Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    gap: 1rem;
+    color: white;
+}
+.short-slogan{
+    margin-top: 2rem;
+    color: white;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.progress{
+    
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.progress-1 {
+   margin-right: 2rem;
+}
+.progress-1 span{
+    font-size: 2rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: white;
+}
+.progress-1 p{
+    text-transform: uppercase;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.calories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--caloryCard);
+    width: 11rem;
+    position: absolute;
+    top : 80%;
+    left: 54%;
+    
+}   
+.calories img{
+    width: 60px;
+    margin: 1.2rem;
+}
+.clories-text span{
+    color: var(--gray);
+    font-size: 1rem;
+    
+}
+.clories-text p{
+    color: white;
+    font-size: 1.2rem;
+}
+.buttons{
+    margin-top: .5rem;
+}
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: var(--orange);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.btn-1{ 
+    padding: 10px 20px;
+    border: 2px solid var(--orange);
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+// ----right-bar
+
+
+.right-bar{
+    flex: 1;
+    background: var(--orange);
+    height: 100vh;
+}
+.btn-2{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 0;
+    background: white;
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    font-weight: 600;
+}
+.bpm{
+    position: absolute;
+    background: var(--darkGrey);
+    width: 8rem;
+    height: 9rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    border-radius: 10px;
+    margin-top: 7rem;
+    margin-left: 8rem;
+}
+.bpm img{
+    width: 35px;
+    margin: 10px;
+    margin-left: 10px;
+}
+.bpm span{
+    color: var(--gray);
+    margin-left: 10px;
+   
+}
+.bpm p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+.hero-img{
+    width: 115%;
+    position: relative;
+    top: 25%;
+    right: 53%;
+    
+}
+.hero-img-back{
+    position: absolute;
+    right: 20rem;
+    top: 4rem;
+    width: 15rem;
+    z-index: -1;
+}
+.blure-hero{
+    width: 23rem;
+    height: 30rem;
+    left: 0;
+    // top: 13%;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .blure-hero{
+        width: 15rem;
+        // filter: blur(0%);
+    }
+
+    .home{
+        flex-direction: column;
+    }
+    .best-ad{
+        width: 100%;
+        > span{
+            font-size: .8rem;
+        }
+    }
+    .slogan{
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        
+    }
+    .short-slogan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .progress{
+        display: flex;
+        flex-basis: 100%;
+        width: 100%;
+        align-items: center;
+        // justify-content: center;
+
+        >.progress-1{
+            // display: flex;
+            // align-items: center;
+            // flex-direction: column;
+            >span{
+                font-size: 1rem;
+            }
+            >p{
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .hero-img-back{
+        display: block;
+        width: 250px;
+        top: 40rem;
+        left: 2rem;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+    }
+    .btn{
+        width: 100%;
+        height: 40px;
+        font-size: .7rem;
+        display: block;
+        // padding: 2px 10px;
+        // padding: 4px 60px;
+    }
+    .btn-1{
+        width: 100%;
+        height: 40px;
+        font-size: .7rem;
+        display: block;
+    }
+    .right-bar{
+        background: transparent;
+    }   
+    .btn-2{
+        top: 43rem;
+        right: 2rem;
+    }
+    .hero-img{
+        width: 60%;
+        
+        bottom: -4rem;
+        left: 34%;
+    }
+    .bpm{
+       position: absolute;
+       top: 35rem;
+       left: -7rem;
+    }
+    .calories{
+        display: none;
+        width: 60%;
+        position: absolute;
+        left: 10px;
+        margin-top: 28rem;
+        >img{
+            width: 30px;
+        }
+    }
+    .calories span{
+        font-size: .8rem;
+        display: flex;
+        // margin-top: 4px;
+    }
+    .calories p{
+        font-size: 1rem;
+    }
+}

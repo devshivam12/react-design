@@ -1,0 +1,79 @@
+.join{
+    padding: 0 2rem;
+    display: flex;
+    gap: 10rem;
+}
+.left-j{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+.left-j hr{
+    position: absolute;
+    // color: var(--orange);
+    margin-top: -10px;
+    border: 2px solid var(--orange);
+    width: 10.5rem;
+}
+.right-j{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.join-from{
+   width: 30rem;
+   height: 4rem;
+    background: var(--caloryCard);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-from>:nth-child(1){
+    background: transparent;
+    color:rgb(213, 212, 212);
+    border: 0;
+    font-size: 1rem;
+    outline: none;
+}
+.join-from>:nth-child(2){
+    padding: 10px 20px;
+    background: var(--orange);
+    border: 0;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 768px) {
+
+    .join{
+        display: block;
+        padding-top: 30rem;
+    }
+    .left-j{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .right-j{
+        // margin-top: 20px;
+        padding-top: 20px;
+        
+    }
+    .join-from input{
+        width: 100%;
+        padding: 2rem;
+    }
+    ::placeholder{
+        font-size: .7rem;
+    }
+    .join-from button{
+        width: 100%;
+        // padding: 0 5rem;
+        margin: 0 1rem;
+    }
+}

@@ -1,0 +1,91 @@
+.program{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+ 
+}
+.program div{
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+}
+.program div h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.program-categories{
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.program-categories .category{
+    background: gray;
+    // padding: 2rem 1rem;
+    padding: 1.5rem;
+    color: white;
+    
+    >small{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1%;
+    }
+}
+.program-categories .category:hover{
+    background: var(--planCard);
+}
+.program-categories .category p{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.category>:nth-child(1){
+    width: 2rem;
+    height: 2rem; 
+    fill: white;
+}
+.join-now {
+    margin-top: 1.5rem;
+}
+.join-now span{
+    color: white;
+    cursor: pointer;
+}
+.join-now span img:hover{
+    transform: translateX(10px);
+}
+.join-now span img{
+    width: 16px;
+    margin-left: .5rem;
+    transition: .5s;
+}
+
+
+
+@media screen and (max-width : 768px) {
+    .program{
+        margin-top: 8rem;
+        display: block;
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >h1{
+                font-size: 1.5rem;
+                line-height: 1px;
+                font-weight: normal;
+            }
+        }
+    }
+    .program-categories{
+        display: block;
+        flex-basis: 100%;
+    }
+    .category{
+        margin: 10px 0;
+    }
+}
